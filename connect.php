@@ -8,7 +8,7 @@
           $dGend = $_POST['dGend'];
           $dDOB = $_POST['dDOB'];
 
-          $conn = mysqli_connect('localhost', 'root', 'Nisha@12345', 'BloodBank');
+          $conn = mysqli_connect('localhost', 'root', 'root', 'BloodBank');
 
           if ($conn)
           {

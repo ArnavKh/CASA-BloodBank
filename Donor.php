@@ -130,7 +130,7 @@ mysqli_close($conn);
 
                          <div class = "searchRes">
                               <?php
-                                   $conn = mysqli_connect('localhost:3306', 'root', 'Nisha@12345', 'BloodBank');
+                                   $conn = mysqli_connect('localhost', 'root', 'root', 'BloodBank');
 
                                    if (isset($_POST['searchDonor']))
                                    {
@@ -228,7 +228,7 @@ mysqli_close($conn);
                <div class = "view">
                     <h1>All Donors</h1><br>
                     <?php
-                         $conn = mysqli_connect('localhost:3306', 'root', 'Nisha@12345', 'BloodBank');
+                         $conn = mysqli_connect('localhost', 'root', 'root', 'BloodBank');
                          
                          $query = "SELECT * FROM Donor";
                          

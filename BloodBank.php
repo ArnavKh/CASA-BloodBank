@@ -62,15 +62,15 @@
             </div>
 
             <ul>
-                <li class="sidebar-item"><a class="sidebar-link" href="home.php"><i class="fa-solid fa-house"></i> Home </a>
+                <li class="sidebar-item"><a class="sidebar-link" href="home_admin.php"><i class="fa-solid fa-house"></i> Home </a>
                 </li>
-                <li class="sidebar-item"><a class="sidebar-link" href="Donor.php"><i class="fas fa-hand-holding-heart"></i> Donor </a>
+                <li class="sidebar-item"><a class="sidebar-link" href="Donor_admin.php"><i class="fas fa-hand-holding-heart"></i> Donor </a>
                 </li>
-                <li class="sidebar-item"><a class="sidebar-link" href="Recipient_user.php"><i class="fas fa-procedures"></i> Recipients </a>
+                <li class="sidebar-item"><a class="sidebar-link" href="Recipient_admin.php"><i class="fas fa-procedures"></i> Recipients </a>
                 </li>
-                <li class="sidebar-item"><a class="sidebar-link" href="transaction.php"><i class="fas fa-ambulance"></i> Transfusions</a>
+                <li class="sidebar-item"><a class="sidebar-link" href="transaction_admin.php"><i class="fas fa-ambulance"></i> Transfusions</a>
                 </li>
-                <li class="sidebar-item"><a class="sidebar-link" href="blood_inventory_user.php"><i class="fas fa-vials"></i>
+                <li class="sidebar-item"><a class="sidebar-link" href="blood_inventory_admin.php"><i class="fas fa-vials"></i>
                     Inventory</a></li>
                 <li class="sidebar-item"><a class="sidebar-link" href="staff.php"><i class="fas fa-user-md"></i> Staff
                     </a></li>
@@ -116,7 +116,7 @@
 
                     <div class = "searchRes">
                          <?php
-                              $conn = mysqli_connect('localhost:3306', 'root', 'Nisha', 'BloodBank');
+                              $conn = mysqli_connect('localhost', 'root', 'root', 'BloodBank');
 
                               if (isset($_POST['searchBank']))
                               {
@@ -206,7 +206,7 @@
           <div class = "view">
             <h1>All Blood Banks</h1>
             <?php
-                $conn = mysqli_connect('localhost:3306', 'root', 'Nisha@12345', 'BloodBank');
+                $conn = mysqli_connect('localhost', 'root', 'root', 'BloodBank');
                 
                 $query = "SELECT * FROM Blood_Bank";
                 

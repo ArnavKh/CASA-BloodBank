@@ -64,67 +64,67 @@ mysqli_close($conn);
 
      <body>
 
-     <div class="main-container">
-          <div class="left-menu">
-               <div>
-                    <a href = "home_admin.php"><h1 id = "navName"><b>CASA</b></h1></a>
-               </div>
-
-               <ul>
-                    <li class="sidebar-item"><a class="sidebar-link" href="home_admin.php"><i class="fa-solid fa-house"></i> Home </a>
-                    </li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="Donor_admin.php"><i class="fas fa-hand-holding-heart"></i> Donor </a>
-                    </li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="Recipient_admin.php"><i class="fas fa-procedures"></i> Recipients </a>
-                    </li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="transaction_admin.php"><i class="fas fa-ambulance"></i> Transfusions</a>
-                    </li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="blood_inventory_admin.php"><i class="fas fa-vials"></i>
-                         Inventory</a></li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="staff.php"><i class="fas fa-user-md"></i> Staff
-                         </a></li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="BloodBank.php"><i class="fas fa-user-md"></i> Blood Bank
-                    </a></li>
-               </ul>
-          </div>
-     </div>
-
-
-     <div class="leftContainer">
-          <div class="add">
-               <h1>Add a Donor</h1>
-               <form method="POST">
-                    <div class="form">
-                         <input type="text" placeholder="*Name" name='dName' id="dName" required /><br>
-                         <input type="email" placeholder="*Email" name='dEmail' id="dEmail" required /><br>
-                         <input type="tel" placeholder="*Phone Number" name='dPhone' id="dPhone" required /><br>
-                         <select id="dropdown" name="dGroup" required>
-                         <option value="" disabled selected>*Blood Group</option>
-                              <option value="A+">A+</option>
-                              <option value="A-">A-</option>
-                              <option value="B+">B+</option>
-                              <option value="B-">B-</option>
-                              <option value="O+">O+</option>
-                              <option value="O-">O-</option>
-                              <option value="AB-">AB-</option>
-                              <option value="AB+">AB+</option>
-                         </select><br>
-                         <select id="dropdown" name="dGend" required>
-                              <option value="" disabled selected>*Gender</option>
-                              <option value="Male">Male</option>
-                              <option value="Female">Female</option>
-                              <option value="Other">Other</option>                   
-                         </select><br>
-                         <label for="inp">D.O.B.</label>
-                         <input type="date" name='dDOB' id="dDOB" required /><br>
-                         <input type="text" placeholder="Medical History" name='dHist' id="dHist" /><br>
-                         <label for="inp">Last Date Of Donation</label>
-                         <input type = "date" placeholder = "Last Donation Date" name = 'lDOD'/><br>
-                         <input type="submit" name='submitDonor' class="submitBtn" />
+          <div class="main-container">
+               <div class="left-menu">
+                    <div>
+                         <a href = "home_admin.php"><h1 id = "navName"><b>CASA</b></h1></a>
                     </div>
-               </form>
+
+                    <ul>
+                         <li class="sidebar-item"><a class="sidebar-link" href="home_admin.php"><i class="fa-solid fa-house"></i> Home </a>
+                         </li>
+                         <li class="sidebar-item"><a class="sidebar-link" href="Donor_admin.php"><i class="fas fa-hand-holding-heart"></i> Donor </a>
+                         </li>
+                         <li class="sidebar-item"><a class="sidebar-link" href="Recipient_admin.php"><i class="fas fa-procedures"></i> Recipients </a>
+                         </li>
+                         <li class="sidebar-item"><a class="sidebar-link" href="transaction_admin.php"><i class="fas fa-ambulance"></i> Transfusions</a>
+                         </li>
+                         <li class="sidebar-item"><a class="sidebar-link" href="blood_inventory_admin.php"><i class="fas fa-vials"></i>
+                              Inventory</a></li>
+                         <li class="sidebar-item"><a class="sidebar-link" href="staff.php"><i class="fas fa-user-md"></i> Staff
+                              </a></li>
+                         <li class="sidebar-item"><a class="sidebar-link" href="BloodBank.php"><i class="fas fa-user-md"></i> Blood Bank
+                         </a></li>
+                    </ul>
+               </div>
           </div>
-     </div>
+
+
+          <div class="leftContainer">
+               <div class="add">
+                    <h1>Add a Donor</h1>
+                    <form method="POST">
+                         <div class="form">
+                              <input type="text" placeholder="*Name" name='dName' id="dName" required /><br>
+                              <input type="email" placeholder="*Email" name='dEmail' id="dEmail" required /><br>
+                              <input type="tel" placeholder="*Phone Number" name='dPhone' id="dPhone" required /><br>
+                              <select id="dropdown" name="dGroup" required>
+                              <option value="" disabled selected>*Blood Group</option>
+                                   <option value="A+">A+</option>
+                                   <option value="A-">A-</option>
+                                   <option value="B+">B+</option>
+                                   <option value="B-">B-</option>
+                                   <option value="O+">O+</option>
+                                   <option value="O-">O-</option>
+                                   <option value="AB-">AB-</option>
+                                   <option value="AB+">AB+</option>
+                              </select><br>
+                              <select id="dropdown" name="dGend" required>
+                                   <option value="" disabled selected>*Gender</option>
+                                   <option value="Male">Male</option>
+                                   <option value="Female">Female</option>
+                                   <option value="Other">Other</option>                   
+                              </select><br>
+                              <label for="inp">D.O.B.</label>
+                              <input type="date" name='dDOB' id="dDOB" required /><br>
+                              <input type="text" placeholder="Medical History" name='dHist' id="dHist" /><br>
+                              <label for="inp">Last Date Of Donation</label>
+                              <input type = "date" placeholder = "Last Donation Date" name = 'lDOD'/><br>
+                              <input type="submit" name='submitDonor' class="submitBtn" />
+                         </div>
+                    </form>
+               </div>
+          </div>
 
 
                
@@ -143,7 +143,7 @@ mysqli_close($conn);
 
                          <div class = "searchRes">
                               <?php
-                                   $conn = mysqli_connect('localhost:3306', 'root', 'Nisha@12345', 'BloodBank');
+                                   $conn = mysqli_connect('localhost', 'root', 'root', 'BloodBank');
 
                                    if (isset($_POST['searchDonor']))
                                    {
@@ -254,7 +254,7 @@ mysqli_close($conn);
                <div class = "view">
                <h1>All Donors</h1>
                <?php
-                    $conn = mysqli_connect('localhost:3306', 'root', 'Nisha@12345', 'BloodBank');
+                    $conn = mysqli_connect('localhost', 'root', 'root', 'BloodBank');
                     
                     $query = "SELECT * FROM Donor";
                     

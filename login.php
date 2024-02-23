@@ -4,7 +4,7 @@
           $password = $_POST['userPassword'];
 
           // Add your database connection code here
-          $conn = mysqli_connect('localhost:3306', 'root', 'Nisha@12345', 'BloodBank');
+          $conn = mysqli_connect('localhost', 'root', 'root', 'BloodBank');
 
           if ($conn)
           {

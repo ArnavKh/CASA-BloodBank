@@ -60,7 +60,7 @@
         <div class = "leftContainer">
             <div class = "add">
                 
-                <h3>Update Blood Bank</h3>
+                <h1>Update Blood Bank</h1>
                 
                 <form method="POST">
                     <div class = "form">

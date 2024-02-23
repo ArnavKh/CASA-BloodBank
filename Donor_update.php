@@ -57,45 +57,43 @@
         <script src="https://kit.fontawesome.com/f890b33209.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="home-nav.css">
     </head>
-    <body>
-        
+    <body>  
         <div class='leftContainer'>
-                <div class = "add">
-                    <h3>Update Donor</h3>
-                    
-                    <form method="POST">
-                        <div class = "form">
-                            <!-- <label for="in">Name:</label> -->
-                            <input type = "text" placeholder = "Name" name = 'dName' id = "dName" value="<?= $n?>" /><br><br>
+            <div class = "add">
+                <h2>Update Donor</h2>
+                
+                <form method="POST">
+                    <div class = "form">
+                        <!-- <label for="in">Name:</label> -->
+                        <input type = "text" placeholder = "Name" name = 'dName' id = "dName" value="<?= $n?>" /><br><br>
 
-                            <!-- <label for = "email">Email</label><br> -->
-                            <input type = "email" placeholder = "Email"  name = 'dEmail' id = "dEmail" value="<?= $de?>" /><br><br>
+                        <!-- <label for = "email">Email</label><br> -->
+                        <input type = "email" placeholder = "Email"  name = 'dEmail' id = "dEmail" value="<?= $de?>" /><br><br>
 
-                            <!-- <label for = "phone">Phone</label><br> -->
-                            <input type = "tel" placeholder = "Phone No" name = 'dPhone' id = "dPhone" value="<?= $dp?>" /><br><br>
+                        <!-- <label for = "phone">Phone</label><br> -->
+                        <input type = "tel" placeholder = "Phone No" name = 'dPhone' id = "dPhone" value="<?= $dp?>" /><br><br>
 
-                            <!-- <label for = "bgroup">Blood Group</label><br> -->
-                            <input type = "text" placeholder = "Blood Group"  name = 'dGroup' id = "dGroup" value="<?= $db?>" /><br><br>
+                        <!-- <label for = "bgroup">Blood Group</label><br> -->
+                        <input type = "text" placeholder = "Blood Group"  name = 'dGroup' id = "dGroup" value="<?= $db?>" /><br><br>
 
-                            <!-- <label for = "medicalHistory">Medical History</label><br>  -->
-                            <input type = "text" placeholder = "Medical History" name = 'dHist' id = "dHist" value="<?= $m?>" /><br><br>
+                        <!-- <label for = "medicalHistory">Medical History</label><br>  -->
+                        <input type = "text" placeholder = "Medical History" name = 'dHist' id = "dHist" value="<?= $m?>" /><br><br>
 
-                            <!-- <label for = "gender">Gender</label><br>  -->
-                            <input type = "text" placeholder = "Gender" name = 'dGend' id = "dGend" value="<?= $dg?>" /><br><br>
+                        <!-- <label for = "gender">Gender</label><br>  -->
+                        <input type = "text" placeholder = "Gender" name = 'dGend' id = "dGend" value="<?= $dg?>" /><br><br>
 
-                            <label for = "dob">Date of Birth</label><br>
-                            <input type = "date" placeholder = "DOB" name = 'dDOB' id = "dDOB" value="<?= $dd?>" /><br><br>
-                            
-                            <label for="inp">Last Date Of Donation:</label>
-                            <input type = "date" placeholder = "Last Date of donation" name = 'lDOD' value="<?= $dod?>" /><br><br>
+                        <label for = "dob">Date of Birth</label><br>
+                        <input type = "date" placeholder = "DOB" name = 'dDOB' id = "dDOB" value="<?= $dd?>" /><br><br>
                         
-                            <input type="hidden" name="D_ID" value="<?= $id?>">
-                            
-                            <input type="submit" name="update" value="Update Donor" class = "submitBtn">
-                        </div>
-                    </form>
-                </div>
-            
+                        <label for="inp">Last Date Of Donation:</label>
+                        <input type = "date" placeholder = "Last Date of donation" name = 'lDOD' value="<?= $dod?>" /><br><br>
+                    
+                        <input type="hidden" name="D_ID" value="<?= $id?>">
+                        
+                        <input type="submit" name="update" value="Update Donor" class = "submitBtn">
+                    </div>
+                </form>
+            </div>
         </div>
     </body>
 </html>

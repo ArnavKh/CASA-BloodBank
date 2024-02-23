@@ -1,8 +1,8 @@
 <?php
 // Database configuration
-$servername = "localhost:3306";
+$servername = "localhost";
 $username = "root";
-$password = "Nisha@12345";
+$password = "root";
 $database = "BloodBank";
 
 // Create connection

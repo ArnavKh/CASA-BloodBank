@@ -23,7 +23,6 @@ if (isset($_SESSION['id']) && isset($_SESSION['S_Name']))
      </head>
 
      <body class = "homeBody">
-
           <div class="main-container">
                <div class="left-menu">
                     <div>
@@ -57,14 +56,6 @@ if (isset($_SESSION['id']) && isset($_SESSION['S_Name']))
                </h1><br />
                <button class="submitBtn"> <a href = "logout.php">Logout</a></button>
           </div>
-          
-          <!-- <div>
-               <h3><a href = "Donor.php">Donor</a></h3>
-               <h3><a href = "Recipient_user.php">Recipient</a></h3>
-               <h3><a href = "staff.php">Staff</a></h3>
-               <h3><a href = "BloodBank.php">Blood Bank</a></h3>
-               <h3><a href = "transaction.php">Transfusion</a></h3>
-          </div> -->
      </body>
 </html>
 
